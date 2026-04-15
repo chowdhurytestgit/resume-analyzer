@@ -1,0 +1,178 @@
+/* ===== GLOBAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+body {
+  background: #0b1220;
+  color: #e5e7eb;
+}
+
+/* ===== LAYOUT ===== */
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  width: 260px;
+  background: #0f172a;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #1f2937;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #38bdf8;
+  margin-bottom: 30px;
+}
+
+.sidebar nav p {
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #94a3b8;
+  transition: 0.3s;
+}
+
+.sidebar nav p:hover {
+  background: #1e293b;
+  color: white;
+}
+
+.active {
+  background: #1e293b;
+  color: #38bdf8 !important;
+}
+
+/* ===== MAIN ===== */
+.main {
+  flex: 1;
+  padding: 35px;
+  overflow-y: auto;
+}
+
+/* ===== HEADER ===== */
+.header h1 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.header p {
+  color: #94a3b8;
+  margin-bottom: 25px;
+}
+
+/* ===== UPLOAD BOX ===== */
+.uploadBox {
+  background: #111827;
+  padding: 20px;
+  border-radius: 14px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 25px;
+  border: 1px solid #1f2937;
+}
+
+.uploadBox input {
+  flex: 1;
+  color: white;
+}
+
+.uploadBox button {
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.uploadBox button:hover {
+  transform: scale(1.05);
+}
+
+/* ===== GRID ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* ===== CARD ===== */
+.card {
+  background: #111827;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid #1f2937;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: #38bdf8;
+}
+
+.big {
+  grid-column: span 2;
+}
+
+/* ===== PROGRESS BAR ===== */
+.progress {
+  height: 10px;
+  background: #1f2937;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 15px 0;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #22c55e, #38bdf8, #6366f1);
+  transition: width 1s ease-in-out;
+  color: #e5e7eb;
+}
+
+/* ===== TAGS ===== */
+.tagBox {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.green {
+  background: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+  border: 1px solid #22c55e;
+}
+
+.red {
+  background: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+  border: 1px solid #ef4444;
+}
+
+.akash{
+    color: #e5e7eb;
+}
